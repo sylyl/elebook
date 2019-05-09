@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
-
- *[简介](插入简介)
+* [MarkDown语法介绍](MarkDownSyntax.md)
+* [GitBook配置](gitbook配置.md)
 
