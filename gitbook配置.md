@@ -1,4 +1,4 @@
-#GitBook基本配置（Windows环境）
+# GitBook基本配置（Windows环境）
 
 1. 安装Node.js环境（Windows环境）
 
