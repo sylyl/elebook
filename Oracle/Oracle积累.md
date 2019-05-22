@@ -12,6 +12,7 @@
 
 使用Oracle JPublisher创建一个Oracle数据类型对应的Java类。
 
+<<<<<<< HEAD
 # Java thin和oci区别
 
 **参考地址**：<https://blog.csdn.net/a327736051/article/details/48766171>
@@ -79,3 +80,5 @@ oracle@entel2:[/oracle]$mv listener.log listener.yyyymmdd
 oracle@entel2:[/oracle]$lsnrctl set log_status on
 ```
 
+=======
+>>>>>>> e116b72388ea139a6b76bc4c1765d878367f5543
