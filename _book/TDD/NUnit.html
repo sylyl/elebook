@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Rancher · GitBook</title>
+        <title>NUnit · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -280,9 +280,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1" data-path="../TDD/NUnit.html">
+        <li class="chapter active" data-level="1.12.1" data-path="NUnit.html">
             
-                <a href="../TDD/NUnit.html">
+                <a href="NUnit.html">
             
                     
                     NUnit
@@ -376,9 +376,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.15.1" data-path="Rancher.html">
+        <li class="chapter " data-level="1.15.1" data-path="../Rancher/Rancher.html">
             
-                <a href="Rancher.html">
+                <a href="../Rancher/Rancher.html">
             
                     
                     Rancher
@@ -456,7 +456,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Rancher</a>
+        <a href=".." >NUnit</a>
     </h1>
 </div>
 
@@ -471,7 +471,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="nunit">NUnit</h1>
+<ul>
+<li><p>[TestFixture]&#x8868;&#x793A;&#xFF1A;&#x7C7B;&#x5305;&#x542B;&#x4E86;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#xFF08;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x53EF;&#x4EE5;&#x88AB;&#x7EE7;&#x627F;&#xFF09;&#x3002;&#x8FD9;&#x4E2A;&#x7C7B;&#x5FC5;&#x987B;&#x662F;&#x516C;&#x6709;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x7C7B;&#x8FD8;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
+</li>
+<li><p>[Test]&#x8868;&#x793A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x3002;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x5FC5;&#x987B;&#x4E3A;void&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x5E26;&#x6709;&#x53C2;&#x6570;</p>
+</li>
+<li><p>[SetUp]&#x5C5E;&#x6027;&#xFF1A;&#x7528;&#x6765;&#x6807;&#x8BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x5F00;&#x59CB;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x4E4B;&#x524D;&#x6267;&#x884C;&#xFF0C;&#x7528;&#x6765;&#x5728;&#x6D4B;&#x8BD5;&#x524D;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E9B;&#x8D44;&#x6E90;&#xFF0C;&#x6BD4;&#x5982;&#x521D;&#x59CB;&#x5316;&#x7C7B;</p>
+</li>
+<li><p>[TearDown]&#x5C5E;&#x6027;&#xFF1A;&#x7528;&#x6765;&#x6807;&#x8BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x6267;&#x884C;&#xFF0C;&#x7528;&#x6765;&#x91CA;&#x653E;&#x4E00;&#x4E9B;&#x8D44;&#x6E90;</p>
+<ul>
+<li><p>TestFixtureSetUp/TestFixtureTearDown<strong>&#x548C;</strong>SetUp&#x548C;TearDown<strong>&#x76F8;&#x4F3C;</strong></p>
+<p><strong>&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#xFF1A;&#x5BF9;&#x4E8E;&#x6602;&#x8D35;&#x8D44;&#x6E90;&#xFF0C;&#x4F8B;&#x5982;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#xFF0C;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x5173;&#x952E;&#x8D44;&#x6E90;&#x3002;&#x800C;&#x4E14;&#x591A;&#x6B21;&#x8FDE;&#x63A5;/&#x5173;&#x95ED;&#x6570;&#x636E;&#x5E93;&#x4F1A;&#x9020;&#x6210;&#x65F6;&#x95F4;&#x7684;&#x6D6A;&#x8D39;</strong></p>
+<p>SetUp&#x548C;TearDown&#x662F;&#x6BCF;&#x4E2A;test&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x6267;&#x884C;&#xFF0C;&#x800C;TestFixtureSetUp/TestFixtureTearDown&#x662F;&#x8BE5;&#x7C7B;&#x7B2C;&#x4E00;&#x4E2A;test&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x6267;&#x884C;TestFixtureSetUp&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x5B8C;&#x540E;&#xFF0C;&#x6267;&#x884C;TestFixtureTearDown</p>
+</li>
+</ul>
+</li>
+<li><p>[Ignore]&#x5C5E;&#x6027;&#xFF1A;&#x7528;&#x6765;&#x6807;&#x8BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x6307;&#x793A;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7531;&#x4E8E;&#x67D0;&#x4E9B;&#x539F;&#x56E0;&#x6682;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x6D4B;&#x8BD5;&#xFF08;&#x6BD4;&#x5982;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#xFF09;</p>
+</li>
+</ul>
+<h3 id="&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<ul>
+<li><p>&#x6D4B;&#x8BD5;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5426;&#x76F8;&#x7B49;</p>
+<pre><code class="lang-c#">Assert.AreEqual(&#x3000;int&#x3000;expected,&#x3000;int&#x3000;actual&#x3000;);
+Assert.AreEqual(&#x3000;decimal&#x3000;expected,&#x3000;decimal&#x3000;actual&#x3000;);
+</code></pre>
+</li>
+<li><p>&#x6D4B;&#x8BD5;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x5426;&#x5F15;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-c#">Assert.AreSame(&#x3000;object&#x3000;expected,&#x3000;object&#x3000;actual&#x3000;);
+Assert.AreNotSame(&#x3000;object&#x3000;expected,&#x3000;object&#x3000;actual&#x3000;);
+</code></pre>
+</li>
+<li><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x88AB;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6216;&#x5217;&#x8868;&#x6240;&#x5305;&#x542B;</p>
+<pre><code class="lang-c#">Assert.Contains(&#x3000;object&#x3000;anObject,&#x3000;IList&#x3000;collection&#x3000;);
+</code></pre>
+</li>
+<li><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5927;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<pre><code>Assert.Greater(&#x3000;int&#x3000;arg1,&#x3000;int&#x3000;arg2&#x3000;);
+</code></pre></li>
+<li><p>&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5C0F;&#x4E8E;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;</p>
+<pre><code>Assert.Less(&#x3000;int&#x3000;arg1,&#x3000;int&#x3000;arg2&#x3000;);
+</code></pre></li>
+<li><p>&#x7C7B;&#x578B;&#x65AD;&#x8A00;</p>
+<pre><code>Assert.IsInstanceOfType(&#x3000;Type&#x3000;expected,&#x3000;object&#x3000;actual&#x3000;);
+</code></pre></li>
+<li><p>&#x6761;&#x4EF6;&#x6D4B;&#x8BD5;</p>
+<pre><code>Assert.IsTrue(&#x3000;bool&#x3000;condition&#x3000;);
+Assert.IsFalse(&#x3000;bool&#x3000;condition);
+Assert.IsNull(&#x3000;object&#x3000;anObject&#x3000;);
+Assert.IsNotNull(&#x3000;object&#x3000;anObject&#x3000;);
+Assert.IsNaN(&#x3000;double&#x3000;aDouble&#x3000;);
+Assert.IsEmpty(&#x3000;string&#x3000;aString&#x3000;);
+Assert.IsNotEmpty(&#x3000;string&#x3000;aString&#x3000;);
+Assert.IsEmpty(&#x3000;ICollection&#x3000;collection&#x3000;);
+Assert.IsNotEmpty(&#x3000;ICollection&#x3000;collection&#x3000;);
+</code></pre></li>
+<li><p>&#x5B57;&#x7B26;&#x4E32;&#x65AD;&#x8A00;(StringAssert)&#xFF1A;&#x63D0;&#x4F9B;&#x4E86;&#x8BB8;&#x591A;&#x68C0;&#x9A8C;&#x5B57;&#x7B26;&#x4E32;&#x503C;&#x7684;&#x6709;&#x7528;&#x7684;&#x65B9;&#x6CD5;</p>
+<pre><code>StringAssert.Contains(&#x3000;string&#x3000;expected,&#x3000;string&#x3000;actual&#x3000;);
+StringAssert.StartsWith(&#x3000;string&#x3000;expected,&#x3000;string&#x3000;actual&#x3000;);
+StringAssert.EndsWith(&#x3000;string&#x3000;expected,&#x3000;string&#x3000;actual&#x3000;);
+StringAssert.AreEqualIgnoringCase(&#x3000;string&#x3000;expected,&#x3000;string&#x3000;actual&#x3000;);
+</code></pre></li>
+</ul>
+<blockquote>
+<p>&#x53C2;&#x8003;&#x6587;&#x6863;&#xFF1A;<a href="http://www.36sign.com/nunit/index.html" target="_blank">http://www.36sign.com/nunit/index.html</a></p>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -506,7 +571,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Rancher","level":"1.15.1","depth":2,"next":{"title":"数据结构篇","level":"1.16","depth":1,"ref":"","articles":[{"title":"线性表篇","level":"1.16.1","depth":2,"path":"DataStructure/线性表.md","ref":"DataStructure/线性表.md","articles":[]}]},"previous":{"title":"Rancher","level":"1.15","depth":1,"ref":"","articles":[{"title":"Rancher","level":"1.15.1","depth":2,"path":"Rancher/Rancher.md","ref":"Rancher/Rancher.md","articles":[]}]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Rancher/Rancher.md","mtime":"2019-05-15T01:12:27.585Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T02:38:06.168Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NUnit","level":"1.12.1","depth":2,"next":{"title":"Oracle","level":"1.13","depth":1,"ref":"","articles":[{"title":"Oracle点滴积累","level":"1.13.1","depth":2,"path":"Oracle/Oracle积累.md","ref":"Oracle/Oracle积累.md","articles":[]}]},"previous":{"title":"TDD","level":"1.12","depth":1,"ref":"","articles":[{"title":"NUnit","level":"1.12.1","depth":2,"path":"TDD/NUnit.md","ref":"TDD/NUnit.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"TDD/NUnit.md","mtime":"2019-05-22T02:36:14.330Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T02:38:06.168Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

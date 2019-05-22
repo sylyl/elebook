@@ -271,7 +271,7 @@
                 <span>
             
                     
-                    Oracle
+                    TDD
             
                 </span>
             
@@ -280,12 +280,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.12.1" data-path="Oracle积累.html">
+        <li class="chapter " data-level="1.12.1" data-path="../TDD/NUnit.html">
             
-                <a href="Oracle积累.html">
+                <a href="../TDD/NUnit.html">
             
                     
-                    Oracle点滴积累
+                    NUnit
             
                 </a>
             
@@ -303,7 +303,7 @@
                 <span>
             
                     
-                    Zookeeper
+                    Oracle
             
                 </span>
             
@@ -312,12 +312,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.13.1" data-path="../Zookeeper/Zookeeper.html">
+        <li class="chapter active" data-level="1.13.1" data-path="Oracle积累.html">
             
-                <a href="../Zookeeper/Zookeeper.html">
+                <a href="Oracle积累.html">
             
                     
-                    Zookeeper
+                    Oracle点滴积累
             
                 </a>
             
@@ -335,7 +335,7 @@
                 <span>
             
                     
-                    Rancher
+                    Zookeeper
             
                 </span>
             
@@ -344,12 +344,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.14.1" data-path="../Rancher/Rancher.html">
+        <li class="chapter " data-level="1.14.1" data-path="../Zookeeper/Zookeeper.html">
             
-                <a href="../Rancher/Rancher.html">
+                <a href="../Zookeeper/Zookeeper.html">
             
                     
-                    Rancher
+                    Zookeeper
             
                 </a>
             
@@ -367,6 +367,38 @@
                 <span>
             
                     
+                    Rancher
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../Rancher/Rancher.html">
+            
+                <a href="../Rancher/Rancher.html">
+            
+                    
+                    Rancher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" >
+            
+                <span>
+            
+                    
                     数据结构篇
             
                 </span>
@@ -376,7 +408,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.15.1" data-path="../DataStructure/线性表.html">
+        <li class="chapter " data-level="1.16.1" data-path="../DataStructure/线性表.html">
             
                 <a href="../DataStructure/线性表.html">
             
@@ -448,7 +480,43 @@
 <p>&#x628A;&#x6D88;&#x606F;&#x8F93;&#x5165;&#x5230;queue&#x79F0;&#x4E3A;&#x5165;&#x5217;&#xFF08;Enqueue&#xFF09;&#xFF0C;&#x76F8;&#x53CD;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x51FA;&#x5217;&#xFF08;Dequeue&#xFF09;&#x3002;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x53EA;&#x80FD;&#x88AB;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;queue&#x7684;&#x7CFB;&#x7EDF;Dequeue&#x3002;</p>
 <p><strong>Java&#x4E2D;&#x4F7F;&#x7528;Oracle native AQ</strong></p>
 <p>&#x4F7F;&#x7528;Oracle JPublisher&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Oracle&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5BF9;&#x5E94;&#x7684;Java&#x7C7B;&#x3002;</p>
+<h1 id="java-thin&#x548C;oci&#x533A;&#x522B;">Java thin&#x548C;oci&#x533A;&#x522B;</h1>
+<p><strong>&#x53C2;&#x8003;&#x5730;&#x5740;</strong>&#xFF1A;<a href="https://blog.csdn.net/a327736051/article/details/48766171" target="_blank">https://blog.csdn.net/a327736051/article/details/48766171</a></p>
+<p><strong>&#x8BED;&#x6CD5;&#x683C;&#x5F0F;</strong></p>
+<pre><code>jdbc:oracle:thin:@server ip: service 
+jdbc:oracle:oci:@service
+</code></pre><p><strong>&#x7ED3;&#x8BBA;</strong>&#xFF1A;</p>
+<blockquote>
+<p>1&#xFF09;&#x4ECE;&#x4F7F;&#x7528;&#x4E0A;&#x6765;&#x8BF4;&#xFF0C;oci&#x5FC5;&#x987B;&#x5728;&#x5BA2;&#x6237;&#x673A;&#x4E0A;&#x5B89;&#x88C5;oracle&#x5BA2;&#x6237;&#x7AEF;&#x6216;&#x624D;&#x80FD;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;thin&#x5C31;&#x4E0D;&#x9700;&#x8981;&#xFF0C;&#x56E0;&#x6B64;&#x4ECE;&#x4F7F;&#x7528;&#x4E0A;&#x6765;&#x8BB2;thin&#x8FD8;&#x662F;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;thin&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x539F;&#x56E0;&#x3002; 
+2&#xFF09;&#x539F;&#x7406;&#x4E0A;&#x6765;&#x770B;&#xFF0C;thin&#x662F;&#x7EAF;java&#x5B9E;&#x73B0;tcp/ip&#x7684;c/s&#x901A;&#x8BAF;&#xFF1B;&#x800C;oci&#x65B9;&#x5F0F;,&#x5BA2;&#x6237;&#x7AEF;&#x901A;&#x8FC7;native java method&#x8C03;&#x7528;c library&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;c library&#x5C31;&#x662F;oci(oracle called interface)&#xFF0C;&#x56E0;&#x6B64;&#x8FD9;&#x4E2A;oci&#x603B;&#x662F;&#x9700;&#x8981;&#x968F;&#x7740;oracle&#x5BA2;&#x6237;&#x7AEF;&#x5B89;&#x88C5;&#xFF08;&#x4ECE;oracle10.1.0&#x5F00;&#x59CB;&#xFF0C;&#x5355;&#x72EC;&#x63D0;&#x4F9B;OCI Instant Client&#xFF0C;&#x4E0D;&#x7528;&#x518D;&#x5B8C;&#x6574;&#x7684;&#x5B89;&#x88C5;client&#xFF09; 
+3&#xFF09;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x9A71;&#x52A8;&#x7C7B;&#x522B;&#xFF0C;oci&#x662F;&#x4E8C;&#x7C7B;&#x9A71;&#x52A8;&#xFF0C; thin&#x662F;&#x56DB;&#x7C7B;&#x9A71;&#x52A8;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x5728;&#x529F;&#x80FD;&#x4E0A;&#x5E76;&#x65E0;&#x5DEE;&#x5F02;&#x3002; 
+4&#xFF09;&#x867D;&#x7136;&#x5F88;&#x591A;&#x4EBA;&#x8BF4;oci&#x7684;&#x901F;&#x5EA6;&#x5FEB;&#x4E8E;thin&#xFF0C;&#x4F46;&#x627E;&#x4E86;&#x534A;&#x5929;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x76F8;&#x5173;&#x7684;&#x6D4B;&#x8BD5;&#x62A5;&#x544A;&#x3002;</p>
+</blockquote>
+<h1 id="oracle&#x65E5;&#x5FD7;&#x622A;&#x65AD;">Oracle&#x65E5;&#x5FD7;&#x622A;&#x65AD;</h1>
+<p><strong>Oracle&#x65E5;&#x5FD7;&#x6240;&#x5728;&#x76EE;&#x5F55;</strong>&#xFF1A;</p>
+<pre><code>For oracle 9i/10g $ORACLE_HOME/network/log/listener_$ORACLE_SID.log
+For oracle 11g/12c $ORACLE_BASE/diag/tnslsnr/&#x4E3B;&#x673A;&#x540D;&#x79F0;/listener/trace/listener.log
+</code></pre><p><strong>&#x9996;&#x5148;&#x505C;&#x6B62;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x8FDB;&#x7A0B;&#xFF08;tnslsnr&#xFF09;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;&#x3002;</strong></p>
+<pre><code>oracle@entel2:[/oracle]$lsnrctl  set log_status off
+</code></pre><p><strong>&#x5C06;&#x76D1;&#x542C;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF08;listener.log&#xFF09;&#x590D;&#x5236;&#x4E00;&#x4EFD;&#xFF0C;&#x4EE5;listener.log.yyyymmdd&#x683C;&#x5F0F;&#x547D;&#x540D;</strong></p>
+<pre><code>oracle@entel2:[/oracle]$cp listener.log listener.log.20161201
+</code></pre><p><strong>&#x5C06;&#x76D1;&#x542C;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF08;listener.log&#xFF09;&#x6E05;&#x7A7A;&#x3002;&#x6E05;&#x7A7A;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x6CD5;&#x6709;&#x5F88;&#x591A;</strong></p>
+<pre><code>oracle@entel2:[/oracle]$echo &#x201C;&#x201D; &gt; listener.log
+&#x6216;&#x8005;
+oracle@entel2:[/oracle]$cp /dev/null listener.log
+&#x6216;&#x8005;
+oracle@entel2:[/oracle]$echo /dev/null &gt; listener.log
+&#x6216;&#x8005;
+oracle@entel2:[/oracle]$&gt;listener.log
+</code></pre><p><strong>&#x5F00;&#x542F;&#x76D1;&#x542C;&#x670D;&#x52A1;&#x8FDB;&#x7A0B;&#xFF08;tnslsnr&#xFF09;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;</strong></p>
+<pre><code>oracle@entel2:[/oracle]$lsnrctl set log_status on
+</code></pre><p><strong>&#x65E5;&#x5FD7;&#x8FC1;&#x79FB;</strong></p>
+<pre><code>oracle@entel2:[/oracle]$ lsnrctl set log_status off
 
+oracle@entel2:[/oracle]$mv listener.log listener.yyyymmdd
+
+oracle@entel2:[/oracle]$lsnrctl set log_status on
+</code></pre>
                                 
                                 </section>
                             
@@ -483,7 +551,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Oracle点滴积累","level":"1.12.1","depth":2,"next":{"title":"Zookeeper","level":"1.13","depth":1,"ref":"","articles":[{"title":"Zookeeper","level":"1.13.1","depth":2,"path":"Zookeeper/Zookeeper.md","ref":"Zookeeper/Zookeeper.md","articles":[]}]},"previous":{"title":"Oracle","level":"1.12","depth":1,"ref":"","articles":[{"title":"Oracle点滴积累","level":"1.12.1","depth":2,"path":"Oracle/Oracle积累.md","ref":"Oracle/Oracle积累.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Oracle/Oracle积累.md","mtime":"2019-05-16T02:09:33.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-16T08:15:17.860Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Oracle点滴积累","level":"1.13.1","depth":2,"next":{"title":"Zookeeper","level":"1.14","depth":1,"ref":"","articles":[{"title":"Zookeeper","level":"1.14.1","depth":2,"path":"Zookeeper/Zookeeper.md","ref":"Zookeeper/Zookeeper.md","articles":[]}]},"previous":{"title":"Oracle","level":"1.13","depth":1,"ref":"","articles":[{"title":"Oracle点滴积累","level":"1.13.1","depth":2,"path":"Oracle/Oracle积累.md","ref":"Oracle/Oracle积累.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Oracle/Oracle积累.md","mtime":"2019-05-17T08:35:20.735Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-22T02:38:06.168Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
